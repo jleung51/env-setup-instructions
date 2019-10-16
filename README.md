@@ -19,7 +19,7 @@ Sample instructions for setting up dependencies and installs.
 
 Clone the repository and navigate into the directory:
 ```shell
-git clone URL.gi<t
+git clone URL.git
 cd REPO/
 ```
 
