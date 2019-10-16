@@ -27,6 +27,23 @@ cd REPO/
 
 Install [Android Studio](https://developer.android.com/studio/).
 
+#### Creating a Production Release
+
+Save the following lines to the file `~/.gradle/gradle.properties` and fill in the values:
+```
+<APPNAME>_KEY_STORE_FILE=/path/to/keystore.jks
+<APPNAME>_KEY_ALIAS=
+<APPNAME>_KEY_PASSWORD=
+<APPNAME>_STORE_PASSWORD=
+```
+
+#### In the Code (not in Setup Instructions)
+
+In `build.gradle`, use the following line to retrieve gradle properties:
+```
+def var = project.findProperty('PROPERTY') ?: 'Gradle property PROPERTY not defined';
+```
+
 ### Heroku
 
 Install the Heroku command line interface by following [these instructions](https://devcenter.heroku.com/articles/heroku-command-line).
