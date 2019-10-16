@@ -29,7 +29,13 @@ Install [Android Studio](https://developer.android.com/studio/).
 
 #### Creating a Production Release
 
-Save the following lines to the file `~/.gradle/gradle.properties` and fill in the values:
+Create the file `~/.gradle/gradle.properties`:
+```shell
+mkdir -p ~/.gradle/
+touch ~/.gradle/gradle.properties
+```
+
+Save the following lines to the file and fill in the values:
 ```
 <APPNAME>_KEY_STORE_FILE=/path/to/keystore.jks
 <APPNAME>_KEY_ALIAS=
