@@ -115,7 +115,7 @@ _Required packages:_ `texlive texlive-bibtex-extra texlive-publishers`
 
 Install the required packages:
 ```shell
-sudo apt-get install texlive texlive-bibtex-extra texlive-publishers
+sudo apt-get install texlive
 ```
 
 To build the output PDF, run pdfTeX twice:
@@ -125,6 +125,11 @@ pdflatex $FILENAME
 ```
 
 #### pdfTeX With a Bibliography
+
+Install the required packages:
+```shell
+sudo apt-get install texlive-bibtex-extra texlive-publishers
+```
 
 Build the bibliography (the `.bib` file):
 ```shell
