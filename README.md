@@ -19,13 +19,13 @@ Sample instructions for setting up dependencies and installs.
 
 Clone the repository and navigate into the directory:
 ```shell
-git clone URL.git
+git clone https://URL.git
 cd REPO/
 ```
 
 ### Android
 
-Install [Android Studio](https://developer.android.com/studio/).
+Install [Android Studio](https://developer.android.com/studio/) and import the project.
 
 #### Creating a Production Release
 
