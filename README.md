@@ -151,3 +151,17 @@ pip3 install PACKAGES
 ```shell
 pip3 install -r requirements.txt
 ```
+
+### Yarn (with React)
+
+Install [Yarn](https://yarnpkg.com/).
+
+Install the necessary packages:
+```shell
+yarn install
+```
+
+Start the server locally:
+```shell
+yarn start
+```
