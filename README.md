@@ -152,6 +152,32 @@ pip3 install PACKAGES
 pip3 install -r requirements.txt
 ```
 
+#### Virtualenv (Optional: Isolated Environment for Python packages)
+
+Install Virtualenv and create an environment named `venv` (or any name you prefer) within your project directory:
+```shell
+pip3 install virtualenv
+cd PROJECT_DIR/
+virtualenv venv
+```
+
+Before installing any other packages from the project, activate the virtual environment to isolate your environment for all following commands:
+```shell
+source venv/bin/activate
+```
+
+If on Windows, run the script directly instead:
+```
+./venv/Scripts/activate
+```
+
+Run all Python and Pip commands here.
+
+To deactivate the isolated virtual environment and return to the original environment, either close the console window or run the following command:
+```shell
+deactivate
+```
+
 ### Yarn (with React)
 
 Install [Yarn](https://yarnpkg.com/).
