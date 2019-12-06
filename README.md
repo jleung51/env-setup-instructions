@@ -143,7 +143,7 @@ If Python 3 is not yet installed, then install the relevant packages:
 sudo apt-get install python3 python3-pip
 ```
 
-Install the pip dependencies:
+Install the PIP dependencies:
 ```shell
 pip3 install PACKAGES
 ```
@@ -171,12 +171,32 @@ If on Windows, run the script directly instead:
 ./venv/Scripts/activate
 ```
 
-Run all Python and Pip commands here.
+Run all Python and PIP commands here.
 
 To deactivate the isolated virtual environment and return to the original environment, either close the console window or run the following command:
 ```shell
 deactivate
 ```
+
+#### Flask
+
+Flask is installed by the PIP commands above.
+
+For all following commands, `flask` can be replaced with `python3 -m flask` if the Flask executable is not available.
+
+Migrate the database to the newest version:
+```shell
+flask db upgrade
+```
+
+Start the server with either one of the following commands:
+```shell
+python3 app.py
+
+flask run
+```
+
+The server will be available on port 5000 (http://127.0.0.1:5000).
 
 ### Yarn (with React)
 
@@ -191,3 +211,16 @@ Start the server locally:
 ```shell
 yarn start
 ```
+
+The server will be available on port 3000 (http://127.0.0.1:3000).
+
+#### Deployment
+
+To build deployable files, edit the value `homepage` in `package.json` to be the URL where the web application will be hosted, so that the page can resolve the correct URL to its resources.
+
+Build the files:
+```shell
+yarn build
+```
+
+The completed files will be ready for deployment at directory `build/`.
