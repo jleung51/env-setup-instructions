@@ -198,6 +198,22 @@ flask run
 
 The server will be available on port 5000 (http://127.0.0.1:5000).
 
+### MySQL
+
+Install [MySQL](https://www.mysql.com/).
+
+Configure access to the root account on MySQL so that you can login with the following command:
+```
+mysql -u root -p YOUR_PASSWORD_HERE
+```
+
+Exit the MySQL prompt by typing:
+```
+exit
+```
+
+For reference, see this [sample guide from DigitalOcean for Debian-based systems](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04).
+
 ### Yarn (with React)
 
 Install [Yarn](https://yarnpkg.com/).
