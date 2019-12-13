@@ -54,7 +54,17 @@ heroku apps:create APPNAME
 
 ### Angular
 
-Install [Angular](https://angular.io/).
+Install [Node.js](https://nodejs.org/en/download/) (which comes with NPM).
+
+Install the required NPM dependencies:
+```shell
+npm install
+```
+
+Install the Angular command-line interface:
+```shell
+npm install -g @angular/cli
+```
 
 To start up the website locally, run:
 ```shell
