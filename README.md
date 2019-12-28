@@ -27,6 +27,14 @@ cd REPO/
 
 Install [Android Studio](https://developer.android.com/studio/) and import the project.
 
+#### Google Maps API Key (for development builds)
+
+Generate a [Google Maps SDK API key (step 1)](https://developers.google.com/maps/documentation/android-sdk/get-api-key).
+
+In the file `app/src/debug/res/values/google_maps_api.xml`, replace the value of the placeholder key with your API key.
+
+Build and run the Android application on a physical or virtual device.
+
 #### Creating a Production Release
 
 Create a new file in the root directory to hold the secure keystore details:
