@@ -1,4 +1,4 @@
-# Setup Instructions
+# Environment Setup Instructions
 
 Sample instructions for setting up dependencies and installs.
 
